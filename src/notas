@@ -1,6 +1,0 @@
-Pasos a seguir en git 
-git init
-git add .
-git commit -m "mi primer commit"
-git remote add origin https://github.com/Ignacio2105/Landing-Page.git
-git push -u origin master
