@@ -1,0 +1,119 @@
+/* Importacion de fuente de letras */
+@import url(../css/clash-display.css);
+
+/* Declaracion de variables de colores y estilos */
+:root{
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light:#6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "Clash Display", sans-serif;
+    --box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    --transition: all 0.5s ease;
+}
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+    color: var(--c-dark) ;
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--c-brand-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+/* Funciones de barra navegacion */
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-dark);
+}
+.navbar .nav-link:hover{
+    color: var(--c-brand);
+}
+
+/* Funcion de los botones */
+.btn {
+    font-weight: 600 !important;;
+    font-size: 14px !important;;
+    padding: 10px 24px !important;;
+    text-transform: uppercase;
+}
+
+.btn-brand{
+    background-color: var(--c-brand) !important;
+    border-color: var(--c-brand) !important;;
+    color: white !important;;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light) !important;;
+    border-color: var(--c-brand-light) !important;;
+}
+
+/* Funciones de pestaña Inicial */
+#hero{
+    background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(0, 0, 0, 0.438)),url(../assets/images/hero-1.jpg);
+    /* Segunda opcion de color de  imagen hero */
+    /* background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438),url(../assets/images/hero-1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Funciones de Sobre Nosotros */
+.section-title{
+    margin-bottom: 60px ;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Iconos de Iconbox */
+/* Diseño de Icono de mail */
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb),0.150);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none !important;
+}
