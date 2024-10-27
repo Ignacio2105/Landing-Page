@@ -49,6 +49,26 @@ img{
     box-shadow: var(--box-shadow);
 }
 
+/* Imagen con ZOOM */
+.image-zoom{
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
+
+
 /* Funciones de barra navegacion */
 .navbar{
     box-shadow: var(--box-shadow);
@@ -63,21 +83,21 @@ img{
 
 /* Funcion de los botones */
 .btn {
-    font-weight: 600 !important;;
-    font-size: 14px !important;;
-    padding: 10px 24px !important;;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px ;
     text-transform: uppercase;
 }
 
 .btn-brand{
-    background-color: var(--c-brand) !important;
-    border-color: var(--c-brand) !important;;
-    color: white !important;;
+    background-color: var(--c-brand) ;
+    border-color: var(--c-brand) ;
+    color: white;
 }
 
 .btn-brand:hover {
-    background-color: var(--c-brand-light) !important;;
-    border-color: var(--c-brand-light) !important;;
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
 }
 
 /* Funciones de pestaña Inicial */
@@ -111,15 +131,15 @@ img{
 /* Iconos de Iconbox */
 /* Diseño de Icono de mail */
 .iconbox{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: rgba(var(--c-brand-rgb),0.150);
     color: var(--c-brand);
     font-size: 34px;
-    flex: none !important;
+    flex: none ;
 }
 
 /* Pestaña de Servicios */
@@ -167,3 +187,19 @@ img{
     background-size: cover;
 }
 
+
+/* Seccion de portafolio */
+.portfolio-item .iconbox{
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.portfolio-item:hover .iconbox{
+    opacity: 1;
+    top: 50%;
+}
